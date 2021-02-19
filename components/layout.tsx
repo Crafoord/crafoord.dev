@@ -29,28 +29,29 @@ export default function Layout({ children, home }: {children: ReactNode, home?: 
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
+          <img src="/images/profile.jpg"></img>
+            {/* <Image
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
               alt={name}
-            />
+            /> */}
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
             <Link href="/">
               <a>
-                <Image
+                {/* <Image
                   priority
                   src="/images/profile.jpg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
                   alt={name}
-                />
+                /> */}
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
