@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 
 const labRoutes: [{path: string, description: string}] = [
-  { path: '/labs/threejs', description: 'three' },
+  { path: '/labs/threejs', description: 'three.js' },
 ]
   
 
@@ -15,9 +15,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
-          Hi! I'm <b>Magnus</b> check out some stuff:
-        </p>
+        <p>Trying out...</p>
         {
           labRoutes.map((lab, index) => {
             return <Link key={index} href={lab.path}>
