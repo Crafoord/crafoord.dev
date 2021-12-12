@@ -1,6 +1,7 @@
 name: nextjs-cloud-run
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
